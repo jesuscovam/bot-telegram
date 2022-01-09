@@ -1,7 +1,8 @@
 import { Telegraf } from "telegraf"
 import Fuse from "fuse.js"
-const TOKEN = "5087244927:AAFqcrzqHvWwMQp2HaCavcu5yaIGSdMYz8w"
+const TOKEN = process.env.TELEGRAM_TOKEN
 const bot = new Telegraf(TOKEN)
+
 const PRENDAS = [
 	{ id: "a", type: "zapatos", price: 4000 },
 	{ id: "b", type: "pantalones", price: 700 },
