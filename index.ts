@@ -1,3 +1,6 @@
+import * as dotenv from "dotenv"
+dotenv.config()
+
 import { Telegraf } from "telegraf"
 import Fuse from "fuse.js"
 const TOKEN = process.env.TELEGRAM_TOKEN
